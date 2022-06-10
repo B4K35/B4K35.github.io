@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Drew Baker | Portfolio</title>
+  <link rel="stylesheet" href="asset./stylesheet.css">
+  <link rel="icon" href="asset./logo.svg">
+  <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
+  <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+  <script src="asset./index.js"></script>
+</head>
+
+<body>
+  <section id="landing-page">
+
+    <nav>
+      <figure>
+        <img id="personal-logo" src="asset./logo.svg" alt="">
+      </figure>
+      <ul class="nav__link--list">
+        <li class="nav__link" onclick="toggleModal()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          ">About</a>
+        </li>
+        <li class="nav__link click" onclick="toggleContrast()">
+          <a href="#" class="
+            nav__link--anchor
+            link__hover-effect
+            link__hover-effect--black
+          "><i class="fas fa-adjust"></i></a>
+        </li>
+      </ul>
+    </nav>
+
+    <header class="header">
+
+      <div class="header__content">
+
+        <h1 class="title">Hello there.</h1>
+        <h1 class="title name">I'm <b class="green">Drew Baker</b>.</h1>
+        <p class="header__para">
+          I'm a full time <b class="green">Student</b> with a strong passion for learning and honing my technical skills. 
+          
+          <br>
+          Click <b class="green click" onclick="toggleModal()">here</b> to learn a little more about me. 
+        </p>
+      </div>
+    </header>
+  </section>
+  <section>
+    <div class="languages">
+        <div class="row">
+            <div class="language__title">This is my <b class="green">Technology Stack</b></div>
+            <div class="language__list">
+            <div class="language">
+                <figure class="language__img--wrapper">
+                <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="Html Logo" 
+                    class="language__img" />
+                </figure>
+                <span class="language__name">HTML</span>
+            </div>
+            <div class="language">
+                <figure class="language__img--wrapper">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="CSS Logo"
+                    class="language__img" />
+                </figure>
+                <span class="language__name">CSS</span>
+            </div>
+            <div class="language">
+                <figure class="language__img--wrapper">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png" alt="JavaScript Logo"
+                    class="language__img" />
+                </figure>
+                <span class="language__name">JavaScript</span>
+            </div>
+            <div class="language">
+                <figure class="language__img--wrapper">
+                <img src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png" alt="React Logo"
+                    class="language__img" />
+                </figure>
+                <span class="language__name">React</span>
+            </div>
+            <div class="language">
+                <figure class="language__img--wrapper">
+                <img src="https://cdn.iconscout.com/icon/free/png-128/python-2-226051.png" alt="Python" 
+                    class="language__img">
+                </figure>
+                <span class="language__name">Python</span>
+            </div>
+            <div class="language">
+                <figure class="language__img--wrapper">
+                <img src="https://cdn.iconscout.com/icon/free/png-512/java-59-1174952.png" alt="Java Logo"
+                    class="language__img" />
+                </figure>
+                <span class="language__name">Java</span>
+            </div>
+            <div class="language">
+                <figure class="language__img--wrapper">
+                <img src="https://cdn.iconscout.com/icon/free/png-512/microsoft-office-722717.png" alt="Microsoft Office Logo"
+                    class="language__img" />
+                </figure>
+                <span class="language__name">Microsoft Office</span>
+            </div>
+            <div class="language">
+                <figure class="language__img--wrapper">
+                <img src="https://cdn.iconscout.com/icon/free/png-512/azure-1868965-1583129.png" alt="Azure Logo" 
+                class="language__img" />
+                </figure>
+                <span class="language__name">Microsoft Azure</span>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+  </section>
+    <div class="modal">
+      <div class="modal__half modal__about">
+        <h3 class="modal__title modal__title--about">Here's a bit more about me.</h3>
+        <p class="modal__para">
+          I'm a 21 year-old Australian looking for experience with the hopes of developing a wide range of <b class="green">IT skills</b>. I am currently studying a <b class ="green">Bachelor of Information Technology</b>.
+          at <b class="green">La Trobe University</b> with a major in <b class="green">Cloud Analytics</b>.
+          <br>
+          Ontop of this I am currently in the process of acquiring certifications from platforms such as,
+        </p>
+        <li class="modal__list -- green">
+            <b class="green">Microsoft Azure</b>
+        </li>
+        <li class="modal__list -- green">
+            <b class="green">Amazon Web Services</b>
+        </li>
+        <li class="modal__list -- green">
+            <b class="green">Google Cloud</b>
+        </li>      
+      </div>
+
+      <div class="modal__half modal__li">
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+        <div class=" modal__li">
+            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="horizontal" data-vanity="drew-baker-523b1222a" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://au.linkedin.com/in/drew-baker-523b1222a?trk=profile-badge"></a></div>
+        </div>
+
+            <div class="modal__li social__list">
+                <a href="https://www.linkedin.com/in/drew-baker-523b1222a/" target="_blank" class="social__link click">
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="./assets/Drew Baker Resume.pdf" target="_blank" class="social__link click">
+                  <i class="fas fa-file-pdf"></i>
+                </a>
+                <a href="https://github.com/B4K35" target="_blank" class="social__link click">
+                  <i class="fab fa-github"></i>
+                </a>
+              </div>
+
+      </div>
+    </div>
+
+  <footer>
+    <div class="container">
+      <div class="row footer__row">
+        <div class="footer__social--list">
+          <a href="https://github.com/B4K35" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            GitHub
+          </a>
+          <a href="https://www.linkedin.com/in/drew-baker-523b1222a/" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            LinkedIn
+          </a>
+          <a href="./assets/Drew Baker Resume.pdf" target="_blank" class="
+          footer__social--link
+          link__hover-effect
+          link__hover-effect--white
+        ">
+            Resume
+          </a>
+        </div>
+
+        <div class="footer__copyright">Copyright &copy; 2022 Drew Baker</div>
+
+      </div>
+    </div>
+  </footer>
+  
+</body>
+
+</html>
