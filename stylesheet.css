@@ -424,12 +424,12 @@ footer {
 }
 
 /* Small phones, tablets, large smart phones */
-@media (max-width: 768px) {
+@media (max-width: 980px) {
   .title {
-    font-size: 80px;
+    font-size: 85px;
   }
   .header__para {
-    font-size: 20px;
+    font-size: 30px;
   }
   .modal {
     top: 0;
