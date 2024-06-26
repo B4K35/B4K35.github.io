@@ -185,12 +185,16 @@
           </a>
         </div>
 
-        <div class="footer__copyright">Copyright &copy; 2022 Drew Baker</div>
+        <div class="footer__copyright">
+          &copy; <span id="current-year"></span> Drew Baker. All rights reserved.
+        </div>
 
       </div>
     </div>
   </footer>
-  
+  <script>
+    document.getElementById('current-year').textContent = new Date().getFullYear();
+  </script>
 </body>
 
 </html>
