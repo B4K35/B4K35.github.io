@@ -10,9 +10,9 @@
   <script src="index.js"></script>
 </head>
 
-<body>
-  <section id="landing-page">
 
+<body>       
+  <section id="landing-page">
     <nav>
       <figure>
         <img id="personal-logo" src="logo.svg" alt="">
@@ -35,21 +35,25 @@
       </ul>
     </nav>
 
+
     <header class="header">
-
-      <div class="header__content">
-
+      <div class="header__content"> 
+  
         <h1 class="title">Hello there.</h1>
         <h1 class="title name">I'm <b class="green">Drew Baker</b>.</h1>
+
         <p class="header__para">
-          I'm a full time <b class="green">Student</b> in my final year, with a strong passion for learning and honing my technical skills. 
-          
-          <br>
-          Click <b class="green click" onclick="toggleModal()">here</b> to learn a little more about me. 
+          I'm a full time <b class="green">Deakin student</b> in my final year, with a strong passion for learning and honing my technical skills.
+        </p>
+        <br>
+        <p class="header__para"> 
+          Click <b class="green click" onclick="toggleModal()">here</b> to learn a little more about me.
         </p>
       </div>
     </header>
   </section>
+ 
+
   <section>
     <div class="languages">
         <div class="row">
@@ -117,46 +121,50 @@
         </div>
     </div>
   </section>
-    <div class="modal">
-      <div class="modal__half modal__about">
-        <h3 class="modal__title modal__title--about">Here's a bit more about me.</h3>
-        <p class="modal__para">
-          I'm a 22 year-old Australian looking for experience with the hopes of developing a wide range of <b class="green">IT skills</b>. I am currently studying a <b class ="green">Bachelor of Cyber Security</b>.
-          at <b class="green">Deakin University</b> with a major interest in <b class="green">Cloud Analytics</b>.
-          <br>
-          Ontop of this I am currently in the process of acquiring certifications from platforms such as:
-        </p>
-        <li class="modal__list -- green">
-            <b class="green">Microsoft Azure</b>
-        </li>
-        <li class="modal__list -- green">
-            <b class="green">Amazon Web Services</b>
-        </li>
-        <li class="modal__list -- green">
-            <b class="green">Google Cloud</b>
-        </li>      
-      </div>
 
-      <div class="modal__half modal__li">
-        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
-        <div class=" modal__li">
-            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="horizontal" data-vanity="drew-baker-523b1222a" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://au.linkedin.com/in/drew-baker-523b1222a?trk=profile-badge"></a></div>
-        </div>
 
-            <div class="modal__li social__list">
-                <a href="https://www.linkedin.com/in/drew-baker-523b1222a/" target="_blank" class="social__link click">
-                  <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a href="./assets/Drew Baker - Resume.pdf" target="_blank" class="social__link click">
-                  <i class="fas fa-file-pdf"></i>
-                </a>
-                <a href="https://github.com/B4K35" target="_blank" class="social__link click">
-                  <i class="fab fa-github"></i>
-                </a>
-              </div>
-
-      </div>
+  <div class="modal">
+    <div class="modal__half modal__about">
+      <h3 class="modal__title modal__title--about">Here's a bit more about me.</h3>
+      <p class="modal__para">
+        I'm a 22 year-old Australian looking for experience with the hopes of developing a wide range of <b class="green">IT skills</b>. I am currently studying a <b class ="green">Bachelor of Cyber Security</b>.
+        at <b class="green">Deakin University</b> with a major interest in <b class="green">Cloud Analytics</b>.
+        <br>
+        Ontop of this I am currently in the process of acquiring certifications from platforms such as:
+      </p>
+      <li class="modal__list -- green">
+          <b class="green">Microsoft Azure</b>
+      </li>
+      <li class="modal__list -- green">
+          <b class="green">Amazon Web Services</b>
+      </li>
+      <li class="modal__list -- green">
+          <b class="green">Google Cloud</b>
+      </li>      
     </div>
+
+
+    <div class="modal__half modal__li">
+      <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+      <div class=" modal__li">
+          <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="dark" data-type="horizontal" data-vanity="drew-baker-523b1222a" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://au.linkedin.com/in/drew-baker-523b1222a?trk=profile-badge"></a></div>
+      </div>
+
+          <div class="modal__li social__list">
+              <a href="https://www.linkedin.com/in/drew-baker-523b1222a/" target="_blank" class="social__link click">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="./assets/Drew Baker - Resume.pdf" target="_blank" class="social__link click">
+                <i class="fab fa-file-pdf"></i>
+              </a>
+              <a href="https://github.com/B4K35" target="_blank" class="social__link click">
+                <i class="fab fa-github"></i>
+              </a>
+            </div>
+
+    </div>
+  </div>
+
 
   <footer>
     <div class="container">
@@ -192,9 +200,10 @@
       </div>
     </div>
   </footer>
+
+
   <script>
     document.getElementById('current-year').textContent = new Date().getFullYear();
   </script>
 </body>
-
 </html>
